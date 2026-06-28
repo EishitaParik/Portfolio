@@ -24,7 +24,7 @@ const Projects = () => {
       });
     });
 
-    gsap.to(".project-timeline", {
+  {/* gsap.to(".project-timeline", {
       transformOrigin: "bottom bottom",
       ease: "power1.inOut",
       scrollTrigger: {
@@ -37,7 +37,7 @@ const Projects = () => {
           });
         },
       },
-    });
+    });    */}
 
     gsap.utils.toArray(".projectText").forEach((text) => {
       gsap.from(text, {
@@ -83,12 +83,9 @@ const Projects = () => {
 
                 <div className="xl:w-3/5">
                   <div className="flex items-start">
-                    <div className="timeline-wrapper xl:left-[35.5vw] ml-27">
-                      <div className="project-timeline" />
-                      <div className="gradient-line w-1 h-full" />
-                    </div>
+                    
 
-                    <div className="projectText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
+                    <div className="projectText flex xl:gap-8 md:gap-6 gap-4 relative z-20">
                       <div className="timeline-logo flex items-center justify-center">
                         <img
                           src={project.logoPath}
